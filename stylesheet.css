@@ -1,0 +1,235 @@
+.container {
+  width: calc(90vw);
+  margin: auto;
+  max-width: 1290px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.section-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: calc(16px + 20 * (calc(90vw) / (1290)));
+  margin-bottom: 100px;
+}
+
+header {
+  background-image: url(/images/previewBack.png);
+  height: 600px !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  margin-top: 30px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav li {
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline;
+  font-weight: 400;
+  font-size: calc(10px + 8 * (calc(90vw) / (1290)));
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav li:hover a {
+  color: #68C3D3;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.preview-content {
+  width: 50%;
+}
+
+.preview-content h1 {
+  margin-top: 85px;
+  font-weight: 600;
+  font-size: calc(20px + 28 * (calc(90vw) / (1290)));
+  text-transform: uppercase;
+}
+
+.preview-content h3 {
+  font-weight: normal;
+  font-size: calc(14px + 10 * (calc(90vw) / (1290)));
+  margin-bottom: 60px;
+}
+
+.preview-content h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: calc(16px + 12 * (calc(90vw) / (1290)));
+  margin-bottom: 60px;
+}
+
+.preview-content button {
+  background: transparent;
+  color: white;
+  border: 5px solid #68C3D3;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: calc(18px + 12 * (calc(90vw) / (1290)));
+  padding: 10px 70px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.preview-content button:hover {
+  background-color: #68C3D3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.receiving {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.receiving h1 {
+  margin-top: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: calc(20px + 28 * (calc(90vw) / (1290)));
+}
+
+.receiving .numbers {
+  width: 100%;
+  margin-top: 100px;
+  height: 400px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.receiving .numbers .number-section {
+  width: 15%;
+  height: 220px;
+  position: relative;
+}
+
+.receiving .numbers .number-section:last-child {
+  margin-right: 50px;
+}
+
+.receiving .numbers h3 {
+  z-index: 10;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-weight: 600;
+  font-size: calc(26px + 10 * (calc(90vw) / (1290)));
+}
+
+.receiving .numbers img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content-table img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content-table .content-table-text {
+  width: 43%;
+}
+
+.content-table .content-table-text .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-table .content-table-text .wrapper .circle-before {
+  width: 30px !important;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.content-table .content-table-text .wrapper h3 {
+  width: 90%;
+}
+
+.content-table h3 {
+  font-weight: normal;
+  font-size: calc(14px + 12 * (calc(90vw) / (1290)));
+}
+
+.answers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.answers-wrapper .answers-block {
+  width: 50%;
+}
+
+.answers-wrapper .answers-block .wrapper {
+  width: 90%;
+  margin: auto;
+}
+/*# sourceMappingURL=stylesheet.css.map */
