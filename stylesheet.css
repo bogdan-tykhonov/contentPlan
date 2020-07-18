@@ -436,7 +436,7 @@ nav li:hover a {
   margin-top: 50px;
 }
 
-.sale .clock {
+/*.sale .clock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,7 +495,7 @@ nav li:hover a {
     font-size: 24px;
   }
 }
-
+*/
 .sale button {
   cursor: pointer;
   margin-top: 70px;
