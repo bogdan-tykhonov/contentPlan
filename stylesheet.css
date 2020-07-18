@@ -24,14 +24,40 @@ a {
   text-decoration: none;
 }
 
+.small-device-button {
+  margin: auto;
+  background: transparent;
+  color: black;
+  border: 5px solid #68C3D3;
+  border-radius: 40px;
+  font-weight: 600 !important;
+  font-size: calc(18px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
+  padding: 10px 70px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .small-device-button {
+    font-size: 30px;
+  }
+}
+
+.small-device-button:hover {
+  background-color: #68C3D3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .section-header {
   margin-top: 100px !important;
   max-width: 900px;
   margin: auto;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  font-size: calc(16px + 20 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(25px + 11 * ((100vw - 375px) / (1280 - 375))) !important;
   margin-bottom: 100px;
 }
 
@@ -74,8 +100,8 @@ nav li {
   text-transform: uppercase;
   cursor: pointer;
   display: inline;
-  font-weight: 400;
-  font-size: calc(10px + 8 * (90vw / (1290)));
+  font-weight: 400 !important;
+  font-size: calc(10px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -94,13 +120,28 @@ nav li:hover a {
 }
 
 .preview-content {
+  margin-top: 50px;
   width: 50%;
+  height: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .preview-content h1 {
-  margin-top: 85px;
-  font-weight: 600;
-  font-size: calc(20px + 28 * (90vw / (1290)));
+  margin: 0;
+  font-weight: 600 !important;
+  font-size: calc(20px + 28 * ((100vw - 375px) / (1280 - 375))) !important;
   text-transform: uppercase;
 }
 
@@ -111,9 +152,8 @@ nav li:hover a {
 }
 
 .preview-content h3 {
-  font-weight: normal;
-  font-size: calc(14px + 10 * (90vw / (1290)));
-  margin-bottom: 60px;
+  font-weight: normal !important;
+  font-size: calc(14px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -124,9 +164,8 @@ nav li:hover a {
 
 .preview-content h2 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: calc(16px + 12 * (90vw / (1290)));
-  margin-bottom: 60px;
+  font-weight: 600 !important;
+  font-size: calc(16px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -140,8 +179,8 @@ nav li:hover a {
   color: white;
   border: 5px solid #68C3D3;
   border-radius: 40px;
-  font-weight: 600;
-  font-size: calc(18px + 12 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(18px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
   padding: 10px 70px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -168,14 +207,15 @@ nav li:hover a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .receiving h1 {
   margin-top: 35px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  font-size: calc(20px + 28 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(30px + 18 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -197,13 +237,12 @@ nav li:hover a {
 }
 
 .receiving .numbers .number-section {
-  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
   height: 220px;
   position: relative;
-}
-
-.receiving .numbers .number-section:last-child {
-  margin-right: 50px;
 }
 
 .receiving .numbers h3 {
@@ -211,8 +250,8 @@ nav li:hover a {
   position: absolute;
   top: 20px;
   left: 50px;
-  font-weight: 600;
-  font-size: calc(26px + 10 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(26px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -230,21 +269,27 @@ nav li:hover a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-table img {
+  width: 45%;
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 .content-table .content-table-text {
-  width: 43%;
+  width: 45%;
 }
 
 .content-table .content-table-text .wrapper {
+  margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -261,12 +306,13 @@ nav li:hover a {
 }
 
 .content-table .content-table-text .wrapper h3 {
+  margin-bottom: 0;
   width: 90%;
 }
 
 .content-table h3 {
-  font-weight: normal;
-  font-size: calc(14px + 12 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(14px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -292,8 +338,8 @@ nav li:hover a {
 }
 
 .answers-wrapper .answers-block .wrapper h3 {
-  font-weight: 600;
-  font-size: calc(20px + 16 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -303,8 +349,8 @@ nav li:hover a {
 }
 
 .answers-wrapper .answers-block .wrapper p {
-  font-weight: 600;
-  font-size: calc(14px + 10 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(14px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
   margin-bottom: 35px;
 }
 
@@ -345,8 +391,8 @@ nav li:hover a {
   margin: 15px 0;
   max-width: 611px;
   width: 90%;
-  font-weight: normal;
-  font-size: calc(16px + 8 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(16px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -367,8 +413,8 @@ nav li:hover a {
 
 .calendar-content-wrapper .calendar-content h2 {
   margin-top: 0;
-  font-weight: normal;
-  font-size: calc(20px + 10 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(20px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -436,7 +482,7 @@ nav li:hover a {
   margin-top: 50px;
 }
 
-/*.sale .clock {
+.sale .clock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +492,7 @@ nav li:hover a {
   -webkit-box-shadow: -20px -20px 32px #FFFFFF, 16px 16px 32px #DAE7EC;
           box-shadow: -20px -20px 32px #FFFFFF, 16px 16px 32px #DAE7EC;
   border-radius: 24px;
-  width: 67%;
+  width: 70%;
 }
 
 .sale .clock .clock-circle {
@@ -470,11 +516,12 @@ nav li:hover a {
   border-radius: 50%;
   padding: 20px 40px;
   font-family: Roboto;
+  width: 10%;
 }
 
 .sale .clock .clock-circle h2 {
-  font-weight: normal;
-  font-size: calc(40px + 30 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(30px + 40 * ((100vw - 375px) / (1280 - 375))) !important;
   margin: 0;
 }
 
@@ -486,8 +533,8 @@ nav li:hover a {
 
 .sale .clock .clock-circle h3 {
   margin: 0;
-  font-weight: normal;
-  font-size: calc(16px + 8 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(16px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -495,7 +542,29 @@ nav li:hover a {
     font-size: 24px;
   }
 }
-*/
+
+.sale .clock .breakpoint {
+  color: black;
+  font-weight: 600 !important;
+  font-size: calc(50px + 50 * ((100vw - 375px) / (1280 - 375))) !important;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .sale .clock .breakpoint {
+    font-size: 100px;
+  }
+}
+
 .sale button {
   cursor: pointer;
   margin-top: 70px;
@@ -505,8 +574,8 @@ nav li:hover a {
   -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
           box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
   border-radius: 60px;
-  font-weight: normal;
-  font-size: calc(20px + 16 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
   padding: 10px 80px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -543,8 +612,8 @@ nav li:hover a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 60px;
-  font-weight: 500;
-  font-size: calc(20px + 8 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(20px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
   background: transparent;
   padding: 20px 40px;
 }
@@ -568,8 +637,8 @@ nav li:hover a {
 }
 
 .smm-calendar-content h1 {
-  font-weight: 600;
-  font-size: calc(20px + 10 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(20px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
   text-transform: uppercase;
 }
 
@@ -585,8 +654,8 @@ nav li:hover a {
 
 .smm-calendar-content .wrappper h2 {
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: calc(16px + 8 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(16px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -607,8 +676,8 @@ nav li:hover a {
 .smm-calendar-content .icon-block h3 {
   margin-left: 20px;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: calc(14 + 7 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(14 + 7 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -635,7 +704,7 @@ nav li:hover a {
   height: 3px;
   background-color: #000000;
   position: absolute;
-  bottom: -70px;
+  bottom: 0px;
 }
 
 .for-free .wrapper {
@@ -660,8 +729,8 @@ nav li:hover a {
 }
 
 .for-free .wrapper .text-content h2 {
-  font-weight: 500;
-  font-size: calc(20px + 6 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(20px + 6 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -681,8 +750,8 @@ nav li:hover a {
 
 .for-free .wrapper .text-content .circle-wrapper h3 {
   width: 90%;
-  font-weight: normal;
-  font-size: calc(14px + 8 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(14px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -702,7 +771,22 @@ nav li:hover a {
   background-image: url(/images/coart.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  height: 51vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
+}
+
+.full-pack .text-content {
+  height: 80%;
 }
 
 .full-pack .container {
@@ -720,21 +804,21 @@ nav li:hover a {
 }
 
 .full-pack .container h2 {
-  font-weight: 500;
-  font-size: calc(20px + 16 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(12px + 18 * ((100vw - 375px) / (1280 - 375))) !important;
   max-width: 866px;
   text-align: center;
 }
 
 @media (min-width: 1440px) {
   .full-pack .container h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
 .full-pack .container h1 {
-  font-weight: 600;
-  font-size: calc(30px + 18 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(20px + 28 * ((100vw - 375px) / (1280 - 375))) !important;
   margin: 0 20px;
 }
 
@@ -749,8 +833,8 @@ nav li:hover a {
   background: transparent;
   border: 2px solid #DAA520;
   color: white;
-  font-weight: 500;
-  font-size: calc(18px + 8 * (90vw / (1290)));
+  font-weight: 500 !important;
+  font-size: calc(12px + 14 * ((100vw - 375px) / (1280 - 375))) !important;
   padding: 15px 30px;
   border-radius: 50px;
   margin: 50px 0 70px 0;
@@ -763,14 +847,15 @@ nav li:hover a {
 }
 
 .questions {
-  height: 745px;
+  overflow: hidden;
+  height: 50vw;
 }
 
 .slider .slide {
   color: white;
   background-size: 100% 100%;
   width: 100%;
-  height: 745px;
+  height: 50vw;
   max-width: 100%;
   position: relative;
 }
@@ -780,6 +865,9 @@ nav li:hover a {
 }
 
 .slider .slide .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -801,9 +889,10 @@ nav li:hover a {
 }
 
 .slider .slide .wrapper h1 {
-  margin-top: 100px;
-  font-weight: 600;
-  font-size: calc(24px + 12 * (90vw / (1290)));
+  margin: 0;
+  text-align: center;
+  font-weight: 600 !important;
+  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
   text-transform: uppercase;
 }
 
@@ -814,11 +903,10 @@ nav li:hover a {
 }
 
 .slider .slide .wrapper h2 {
-  font-weight: normal;
-  font-size: calc(24px + 12 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(10px + 26 * ((100vw - 375px) / (1280 - 375))) !important;
   text-align: center;
   width: 80%;
-  margin: 100px 0 50px 0;
 }
 
 @media (min-width: 1440px) {
@@ -828,8 +916,8 @@ nav li:hover a {
 }
 
 .slider .slide .wrapper button {
-  font-weight: normal;
-  font-size: calc(20px + 9 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(12px + 17 * ((100vw - 375px) / (1280 - 375))) !important;
   background: transparent;
   padding: 10px 70px;
   border: 2px solid white;
@@ -845,23 +933,26 @@ nav li:hover a {
 }
 
 .slick-arrow {
-  position: absolute;
   z-index: 100;
 }
 
 .slick-arrow::before {
+  position: absolute;
   color: white !important;
-  font-size: 120px !important;
   font-weight: 600 !important;
+  font-size: calc(60px + 60 * ((100vw - 375px) / (1280 - 375))) !important;
   font-family: "Font Awesome 5 Free" !important;
 }
 
-.slick-next {
-  right: 100px !important;
+@media (min-width: 1440px) {
+  .slick-arrow::before {
+    font-size: 120px;
+  }
 }
 
 .slick-next::before {
   content: "" !important;
+  right: 40px !important;
 }
 
 .slick-prev {
@@ -869,6 +960,7 @@ nav li:hover a {
 }
 
 .slick-prev::before {
+  left: 40px !important;
   content: "" !important;
 }
 
@@ -888,8 +980,8 @@ footer .container {
 }
 
 footer .container h1 {
-  font-weight: 300;
-  font-size: calc(16px + 6 * (90vw / (1290)));
+  font-weight: 300 !important;
+  font-size: calc(10px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -900,8 +992,8 @@ footer .container h1 {
 
 footer .container h1 span {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: calc(16px + 6 * (90vw / (1290)));
+  font-weight: 600 !important;
+  font-size: calc(10px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -911,8 +1003,8 @@ footer .container h1 span {
 }
 
 footer .container h2 {
-  font-weight: normal;
-  font-size: calc(14px + 3 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(10px + 7 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
@@ -936,8 +1028,8 @@ footer .container .info {
 
 footer .container .info h3 {
   text-transform: uppercase;
-  font-weight: normal;
-  font-size: calc(12px + 2 * (90vw / (1290)));
+  font-weight: normal !important;
+  font-size: calc(8px + 6 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {

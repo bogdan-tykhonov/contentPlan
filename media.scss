@@ -1,0 +1,203 @@
+@media(max-width:992px){
+    .numbers {
+        position: relative;
+        height: 500px;
+    }
+    .receiving .numbers .number-section{
+       width: 40%;
+       display: inline-block;
+       &:nth-child(2){
+           position: absolute;
+           right: 0;
+       }
+       &:nth-child(1){
+        position: absolute;
+        left: 0;
+    }
+    &:nth-child(3){
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &:nth-child(4){
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    }
+    .calendar-top-wrappper{
+        align-items: center;
+    }
+    .full-pack button{
+        margin: 0;
+    }
+}
+@media(max-width:768px){
+    .sale .clock .clock-circle{
+        margin: 20px  0;
+        padding: 15px 30px;
+    }
+    .clock{
+        width: 100%!important;
+    }
+    header{
+        height: 350px!important;
+    }
+    nav ul{
+        width: 50%;
+    }
+    .preview-content{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .content-table{
+        flex-direction: column-reverse;
+        align-items: center;
+        .content-table-text{
+            width: 100%;
+            h3{
+margin-top: 0;
+            }
+        }
+        img{
+            margin-top: 50px;
+            width: 60%;
+        }
+    }
+    .calendar-top-wrappper{
+        flex-direction: column;
+    }
+    .calendar-content{
+        h2{
+            text-align: center;
+        }
+        width: 100%!important;
+        &:first-child{
+            width: 70%!important;
+            margin-bottom: 50px;
+        }
+    }
+    .smm-calendar-content{
+        flex-direction: column;
+        .main-img{
+            width: 70%!important;
+            margin-bottom: 40px;
+        }
+        .wrappper{
+            h2{
+                text-align: center!important;
+            }
+        }
+        h1{
+            margin-top: 50px;
+        }
+    }
+    .section-header{
+        margin-bottom: 50px!important;
+    }
+    .smm-calendar .section-header{
+        margin-top: 50px!important;
+    }
+    .for-free .wrapper{
+        flex-direction: column-reverse;
+        .text-content{
+            width: 100%;
+        }
+        img{
+            width: 80%!important;
+        }
+    }
+    .for-free .img-wrapper {
+        width: 80%;
+        img{
+            width: 100%!important;
+        }
+    }
+    .margin{
+        margin-top: 50px!important;
+    }
+    .full-pack{
+        .text-content{
+        h2:first-child{
+            margin: 0;
+        }
+    }
+  button{
+      margin: 0;
+      padding: 7px 10px;
+  }
+    
+}
+.section-header{
+    margin-top: 50px!important;
+}
+}
+@media(max-width:576px){
+    .slick-prev::before{
+        left: 10px!important;
+    }
+    footer .container{
+        padding-bottom: 10px;
+    }
+    .slider .slide .wrapper button{
+        padding: 5px 40px;
+    }
+    .full-pack button{
+        display: none;
+    }
+    .sale .section-header{
+        padding: 20px 35px;
+    width: 80%;
+    }
+    nav ul {
+        width: 60%;
+    }
+    .answers-wrapper{
+        flex-direction: column;
+        .answers-block{
+            width: 100%!important;
+        }
+    }
+    .text-below-wrappper{
+        flex-direction: column;
+        .block{
+            width: 100%!important;
+        }
+        .wrapper{
+            width: 100%!important;
+        }
+    }
+.numbers{
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center;
+    height: auto!important;
+    .number-section{
+        display: flex!important;
+        position: relative!important;
+        width: 70%!important;
+       &:not(:last-child){
+        margin-bottom: 80px;
+       }
+        h3{
+            font-size: 35px!important;
+        }
+    }
+}
+.preview-content button{
+    display: none;
+}
+.small-device-button{
+    display: block!important;
+}
+}
+@media(max-width:500px){
+    header {
+        height: 250px !important;
+        background-size: 100% 100%;
+    }
+    .small-device-button{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
