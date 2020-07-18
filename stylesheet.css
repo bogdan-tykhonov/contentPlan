@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 90vw;
   margin: auto;
@@ -761,6 +762,10 @@ nav li:hover a {
   }
 }
 
+.questions {
+  height: 745px;
+}
+
 .slider .slide {
   color: white;
   background-size: 100% 100%;
@@ -844,12 +849,19 @@ nav li:hover a {
   z-index: 100;
 }
 
+.slick-arrow::before {
+  color: white !important;
+  font-size: 120px !important;
+  font-weight: 600 !important;
+  font-family: "Font Awesome 5 Free" !important;
+}
+
 .slick-next {
   right: 100px !important;
 }
 
 .slick-next::before {
-  font-size: 100px !important;
+  content: "" !important;
 }
 
 .slick-prev {
@@ -857,6 +869,84 @@ nav li:hover a {
 }
 
 .slick-prev::before {
-  font-size: 100px !important;
+  content: "" !important;
+}
+
+footer {
+  background-color: #010D15;
+}
+
+footer .container {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+footer .container h1 {
+  font-weight: 300;
+  font-size: calc(16px + 6 * (90vw / (1290)));
+}
+
+@media (min-width: 1440px) {
+  footer .container h1 {
+    font-size: 22px;
+  }
+}
+
+footer .container h1 span {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: calc(16px + 6 * (90vw / (1290)));
+}
+
+@media (min-width: 1440px) {
+  footer .container h1 span {
+    font-size: 22px;
+  }
+}
+
+footer .container h2 {
+  font-weight: normal;
+  font-size: calc(14px + 3 * (90vw / (1290)));
+}
+
+@media (min-width: 1440px) {
+  footer .container h2 {
+    font-size: 17px;
+  }
+}
+
+footer .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .info h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: calc(12px + 2 * (90vw / (1290)));
+}
+
+@media (min-width: 1440px) {
+  footer .container .info h3 {
+    font-size: 14px;
+  }
+}
+
+footer .container .info h3:first-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=stylesheet.css.map */
