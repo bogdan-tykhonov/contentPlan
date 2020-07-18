@@ -40,7 +40,7 @@ a {
 
 @media (min-width: 1440px) {
   .small-device-button {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 
@@ -63,7 +63,7 @@ a {
 
 @media (min-width: 1440px) {
   .section-header {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -108,7 +108,7 @@ nav li {
 
 @media (min-width: 1440px) {
   nav li {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
@@ -122,7 +122,8 @@ nav li:hover a {
 .preview-content {
   margin-top: 50px;
   width: 50%;
-  height: 35vw;
+  height: 30vw;
+  max-height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +148,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .preview-content h1 {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 }
 
@@ -158,7 +159,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .preview-content h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
@@ -170,7 +171,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .preview-content h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
@@ -189,7 +190,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .preview-content button {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 
@@ -220,7 +221,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .receiving h1 {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 }
 
@@ -256,7 +257,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .receiving .numbers h3 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -317,7 +318,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .content-table h3 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 }
 
@@ -344,7 +345,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .answers-wrapper .answers-block .wrapper h3 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -356,7 +357,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .answers-wrapper .answers-block .wrapper p {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
@@ -397,7 +398,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .calendar-content-wrapper .wrapper h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
@@ -419,7 +420,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .calendar-content-wrapper .calendar-content h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 
@@ -527,7 +528,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .sale .clock .clock-circle h2 {
-    font-size: 70px;
+    font-size: 70px !important;
   }
 }
 
@@ -539,7 +540,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .sale .clock .clock-circle h3 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
@@ -561,7 +562,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .sale .clock .breakpoint {
-    font-size: 100px;
+    font-size: 100px !important;
   }
 }
 
@@ -584,7 +585,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .sale button {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -620,7 +621,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .smm-calendar button {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
@@ -644,7 +645,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .smm-calendar-content h1 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 
@@ -660,7 +661,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .smm-calendar-content .wrappper h2 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
@@ -682,7 +683,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .smm-calendar-content .icon-block h3 {
-    font-size: 21;
+    font-size: 21 !important;
   }
 }
 
@@ -735,7 +736,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .for-free .wrapper .text-content h2 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 }
 
@@ -756,7 +757,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .for-free .wrapper .text-content .circle-wrapper h3 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
@@ -812,7 +813,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .full-pack .container h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 
@@ -824,7 +825,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .full-pack .container h1 {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 }
 
@@ -842,7 +843,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .full-pack button {
-    font-size: 26px;
+    font-size: 26px !important;
   }
 }
 
@@ -886,6 +887,11 @@ nav li:hover a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 40vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 580px;
 }
 
 .slider .slide .wrapper h1 {
@@ -898,7 +904,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .slider .slide .wrapper h1 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -911,7 +917,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .slider .slide .wrapper h2 {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 
@@ -928,7 +934,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .slider .slide .wrapper button {
-    font-size: 29px;
+    font-size: 29px !important;
   }
 }
 
@@ -946,7 +952,7 @@ nav li:hover a {
 
 @media (min-width: 1440px) {
   .slick-arrow::before {
-    font-size: 120px;
+    font-size: 120px !important;
   }
 }
 
@@ -986,7 +992,7 @@ footer .container h1 {
 
 @media (min-width: 1440px) {
   footer .container h1 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
@@ -998,7 +1004,7 @@ footer .container h1 span {
 
 @media (min-width: 1440px) {
   footer .container h1 span {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
@@ -1009,7 +1015,7 @@ footer .container h2 {
 
 @media (min-width: 1440px) {
   footer .container h2 {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 }
 
@@ -1034,7 +1040,7 @@ footer .container .info h3 {
 
 @media (min-width: 1440px) {
   footer .container .info h3 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
