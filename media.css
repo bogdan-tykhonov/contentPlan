@@ -144,6 +144,11 @@
 }
 
 @media (max-width: 576px) {
+  header {
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
   .slick-prev::before {
     left: 10px !important;
   }
@@ -209,9 +214,6 @@
   }
   .numbers .number-section h3 {
     font-size: 35px !important;
-  }
-  .preview-content button {
-    display: none;
   }
   .small-device-button {
     display: block !important;
