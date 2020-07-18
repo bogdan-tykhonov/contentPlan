@@ -441,6 +441,7 @@ border-radius: 50%;
 }
 //////////////////////////////full-pack///////////////
 .full-pack{
+    min-height: 600px;
     background-image: url(images/coart.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -450,21 +451,18 @@ border-radius: 50%;
     align-items: center;
     justify-content: center;
     color: white;
-    .text-content{
-        height: 80%;
-    }
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-transform: uppercase;
         h2{
-            @include font(500,12px ,18 );
+            @include font(500,25px ,11 );
             max-width: 866px;
             text-align: center;
         }
         h1{
-            @include font(600,20px ,28 );
+            @include font(600,40px ,8 );
             margin:0 20px;
         }
     }
@@ -473,7 +471,7 @@ border-radius: 50%;
         background: transparent;
         border: 2px solid #DAA520;
         color: white;
-        @include font(500,12px ,14 );
+        @include font(500,16px ,10 );
         padding: 15px 30px;
         border-radius: 50px;
         margin: 50px 0 70px 0;
@@ -483,11 +481,13 @@ border-radius: 50%;
 .questions{
     overflow: hidden;
     height: 50vw;
+    min-height: 400px;
     //max-height: 745px;
 }
 .slider{
-    
+    min-height: 400px;
     .slide{
+        min-height: 400px;
         color: white;
         background-size: 100% 100%;
          width: 100%;
@@ -518,11 +518,11 @@ border-radius: 50%;
             h1{
                 margin: 0;
                 text-align: center;
-                @include font(600,20px ,16 );
+                @include font(600,25px ,11 );
                 text-transform: uppercase;
             }
             h2{
-                @include font(normal,10px ,26 );
+                @include font(normal,16px ,20 );
                 text-align: center;
                 width: 80%;
                 //margin: 100px 0 50px 0;
@@ -571,14 +571,14 @@ footer{
         justify-content: space-between;
         color: white;
         h1{
-            @include font(300,10px ,12 );
+            @include font(300,14px ,16 );
             span{
                 text-transform: uppercase;
-                @include font(600,10px ,12 );
+                @include font(600,14px ,16 );
             }
         }
         h2{
-            @include font(normal,10px ,7 );
+            @include font(normal,12px ,9 );
         }
         .info{
             display: flex;
@@ -586,7 +586,7 @@ footer{
             align-items: center;
             h3{
                 text-transform: uppercase;
-                @include font(normal,8px ,6 );
+                @include font(normal,12px ,10 );
                 &:first-child{
                     margin-bottom: 0;
                 }

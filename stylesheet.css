@@ -769,6 +769,7 @@ nav li:hover a {
 }
 
 .full-pack {
+  min-height: 600px;
   background-image: url(images/coart.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -784,10 +785,6 @@ nav li:hover a {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-}
-
-.full-pack .text-content {
-  height: 80%;
 }
 
 .full-pack .container {
@@ -806,20 +803,20 @@ nav li:hover a {
 
 .full-pack .container h2 {
   font-weight: 500 !important;
-  font-size: calc(12px + 18 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(25px + 11 * ((100vw - 375px) / (1280 - 375))) !important;
   max-width: 866px;
   text-align: center;
 }
 
 @media (min-width: 1440px) {
   .full-pack .container h2 {
-    font-size: 30px !important;
+    font-size: 36px !important;
   }
 }
 
 .full-pack .container h1 {
   font-weight: 600 !important;
-  font-size: calc(20px + 28 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(40px + 8 * ((100vw - 375px) / (1280 - 375))) !important;
   margin: 0 20px;
 }
 
@@ -835,7 +832,7 @@ nav li:hover a {
   border: 2px solid #DAA520;
   color: white;
   font-weight: 500 !important;
-  font-size: calc(12px + 14 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(16px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
   padding: 15px 30px;
   border-radius: 50px;
   margin: 50px 0 70px 0;
@@ -850,9 +847,15 @@ nav li:hover a {
 .questions {
   overflow: hidden;
   height: 50vw;
+  min-height: 400px;
+}
+
+.slider {
+  min-height: 400px;
 }
 
 .slider .slide {
+  min-height: 400px;
   color: white;
   background-size: 100% 100%;
   width: 100%;
@@ -898,7 +901,7 @@ nav li:hover a {
   margin: 0;
   text-align: center;
   font-weight: 600 !important;
-  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(25px + 11 * ((100vw - 375px) / (1280 - 375))) !important;
   text-transform: uppercase;
 }
 
@@ -910,7 +913,7 @@ nav li:hover a {
 
 .slider .slide .wrapper h2 {
   font-weight: normal !important;
-  font-size: calc(10px + 26 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(16px + 20 * ((100vw - 375px) / (1280 - 375))) !important;
   text-align: center;
   width: 80%;
 }
@@ -987,35 +990,35 @@ footer .container {
 
 footer .container h1 {
   font-weight: 300 !important;
-  font-size: calc(10px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(14px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
   footer .container h1 {
-    font-size: 22px !important;
+    font-size: 30px !important;
   }
 }
 
 footer .container h1 span {
   text-transform: uppercase;
   font-weight: 600 !important;
-  font-size: calc(10px + 12 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(14px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
   footer .container h1 span {
-    font-size: 22px !important;
+    font-size: 30px !important;
   }
 }
 
 footer .container h2 {
   font-weight: normal !important;
-  font-size: calc(10px + 7 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(12px + 9 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
   footer .container h2 {
-    font-size: 17px !important;
+    font-size: 21px !important;
   }
 }
 
@@ -1035,12 +1038,12 @@ footer .container .info {
 footer .container .info h3 {
   text-transform: uppercase;
   font-weight: normal !important;
-  font-size: calc(8px + 6 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(12px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
   footer .container .info h3 {
-    font-size: 14px !important;
+    font-size: 22px !important;
   }
 }
 

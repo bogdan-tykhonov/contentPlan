@@ -1,5 +1,22 @@
 
+@media(max-width:1440px){
+    .full-pack{
+        align-items: flex-start!important;
+        .text-content{
+            height: 80%;
+        }
+        button{
+            margin: 0!important;
+        }
+    }
+}
 @media(max-width:992px){
+    .slide{
+        .container{
+            height: 100%!important;
+            justify-content: space-around!important;
+        }
+    }
     .numbers {
         position: relative;
         height: 500px;
@@ -118,11 +135,6 @@ margin-top: 0;
         margin-top: 50px!important;
     }
     .full-pack{
-        .text-content{
-        h2:first-child{
-            margin: 0;
-        }
-    }
   button{
       margin: 0;
       padding: 7px 10px;
@@ -134,6 +146,41 @@ margin-top: 0;
 }
 }
 @media(max-width:576px){
+    footer{
+        .container{
+            flex-direction: column-reverse;
+            align-items: center;
+            .info{
+                h3{
+                    font-size: 15px!important;
+                }
+
+            }
+            h2{
+                    font-size: 20px!important;
+                }
+                h1{
+                    font-size: 20px!important;
+                    span{
+                        font-size: 20px!important;
+                    }
+                }
+        }
+    }
+    .questions{
+        .slider{
+            .slide{
+               background-position: center;
+               background-size: cover;
+
+            }
+            
+        }
+    }
+    .full-pack{
+        background-size: cover!important;
+        background-position: center;
+    }
     .preview-content{
         margin-top: 100px!important;
         width: 100%!important;
@@ -172,9 +219,6 @@ margin-top: 0;
     }
     .slider .slide .wrapper button{
         padding: 5px 40px;
-    }
-    .full-pack button{
-        display: none;
     }
     .sale .section-header{
         padding: 20px 35px;
@@ -219,4 +263,9 @@ margin-top: 0;
 .small-device-button{
     display: block!important;
 }
+}
+@media(max-width:375px){
+    .full-pack button{
+        display: none;
+    }
 }
