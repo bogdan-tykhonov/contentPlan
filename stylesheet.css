@@ -1036,6 +1036,10 @@ footer .container .info {
 }
 
 footer .container .info h3 {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
   text-transform: uppercase;
   font-weight: normal !important;
   font-size: calc(12px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
@@ -1047,7 +1051,45 @@ footer .container .info h3 {
   }
 }
 
+footer .container .info h3:hover {
+  color: #68C3D3;
+}
+
 footer .container .info h3:first-child {
   margin-bottom: 0;
+}
+
+footer .container .info ul {
+  cursor: default;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+footer .container .info ul li {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: normal !important;
+  font-size: calc(10px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  footer .container .info ul li {
+    font-size: 20px !important;
+  }
+}
+
+footer .container .info ul li:hover {
+  color: #68C3D3;
+}
+
+footer .container .info ul li:hover a {
+  color: #68C3D3;
 }
 /*# sourceMappingURL=stylesheet.css.map */

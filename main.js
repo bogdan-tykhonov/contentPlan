@@ -15,51 +15,81 @@ $("nav").on("click","a", function (event) {
         top = ($(id).offset().top)-50;
     $('body,html').animate({scrollTop: top}, 1500);
 });
-//////////////////////timer///////////////
-let hours = 24;
-let minutes = 60;
-let seconds = 15;
-setMinutes();
-setHours();
-setSeconds();
-function addZero(time){
-return '0'+ `${time}`;
-}
-function setSeconds(){
-  
- if(seconds == 0) seconds = 60;
- else{
-seconds--;
-if(seconds < 10){
-   seconds = addZero(seconds);
-};
-$('#seconds').text(seconds);
- }
-}
-function setMinutes(){
-    if(minutes == 0) minutes = 60;
-    else{
-    minutes--;
-    if(minutes < 10){
-        minutes = addZero(seconds);
-     };
-    $('#minutes').text(minutes);
-    }
-}
-function setHours(){
-    if(hours == 0){
-        clearInterval(secondsTime);
-        clearInterval(minutesTime);
-        clearInterval(hoursTime);
-    }else{
-    hours--;
-    if(hours < 10){
-        hours = addZero(seconds);
-     };
-    $('#hours').text(hours);
-    }
-}
+/////////////////////cookie//////////////////
+function setCookie(name, value, options = {}) {
 
-let secondsTime = setInterval(setSeconds,1000);
-let minutesTime = setInterval(setMinutes,1000*60);
-let hoursTime = setInterval(setHours,1000*60*60);
+    options = {
+      path: '/',
+      // при необходимости добавьте другие значения по умолчанию
+      ...options
+    };
+  
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+  
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+  
+    document.cookie = updatedCookie;
+  };
+
+  function deleteCookie(name) {
+    setCookie(name, "", {
+      'max-age': -1
+    })
+  };
+
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  };
+//////////////////////timer///////////////
+let date;
+let time;
+let nextDay;
+function addZero(timeFormat){
+    if(timeFormat<10){
+       return '0'+`${timeFormat}`;
+    }else{
+        return timeFormat;
+    }
+}
+if(getCookie('time')){
+    nextDay = JSON.parse(getCookie('time'));
+}else{
+    nextDay = new Date().getTime()+86400000;;
+    setCookie("time", nextDay, 86400000);
+};
+function timer(){
+     date = new Date();
+     let timeLeft = nextDay - date;
+     let newDate = new Date(timeLeft);
+let hours = newDate.getUTCHours();
+let minutes = newDate.getUTCMinutes();
+let seconds = newDate.getUTCSeconds();
+ seconds = addZero(seconds);
+ minutes = addZero(minutes);
+ hours = addZero(hours);
+$('#seconds').text(seconds);
+$('#hours').text(hours);
+$('#minutes').text(minutes);
+}
+setInterval(timer,1000);
+//////////////////////contacts/////////////
+$('.info h3').on('click', function(){
+    if($('.info ul').css('height') == '0px'){
+    $('.info ul').css('height','200px');
+    }else{
+        $('.info ul').css('height','0px');
+    }
+})

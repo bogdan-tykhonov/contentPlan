@@ -584,11 +584,39 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
+          
             h3{
+                transition: $transition;
+                cursor: pointer;
+                text-align: center;
                 text-transform: uppercase;
                 @include font(normal,12px ,10 );
+                &:hover{
+                    color: #68C3D3;
+                }
                 &:first-child{
                     margin-bottom: 0;
+                }
+            }
+            ul{
+                cursor: default;
+                transition: $transition;
+                height: 0px;
+                overflow: hidden;
+                width: 100%;
+                li{
+                    transition: $transition;
+                    text-transform: uppercase;
+                    @include font(normal,10px ,10 );
+                    cursor: pointer;
+                    margin-top: 20px;
+                    text-align: center;
+                    &:hover{
+                        color: #68C3D3;
+                    }
+                    &:hover a{
+                        color: #68C3D3;
+                    }
                 }
             }
         }
