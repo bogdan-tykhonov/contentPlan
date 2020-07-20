@@ -15,6 +15,12 @@ $("nav").on("click","a", function (event) {
         top = ($(id).offset().top)-50;
     $('body,html').animate({scrollTop: top}, 1500);
 });
+$("a").on("click",function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+      top = ($(id).offset().top)-500;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 /////////////////////cookie//////////////////
 function setCookie(name, value, options = {}) {
 
@@ -86,10 +92,11 @@ $('#minutes').text(minutes);
 }
 setInterval(timer,1000);
 //////////////////////contacts/////////////
-$('.info h3').on('click', function(){
+$('.info h3:first-child').on('click', function(){
     if($('.info ul').css('height') == '0px'){
     $('.info ul').css('height','200px');
     }else{
         $('.info ul').css('height','0px');
     }
 })
+base
