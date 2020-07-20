@@ -283,10 +283,38 @@
                             </h3>
                             </div>            
                 </div>
+               
+        <?php 
         
+$data = [
+    "public_key" => "i57952521690",
+    "version" => "3",
+    "action"=> "pay",
+    "amount"=>"3",
+    "currency"=>"UAH",
+    "description"=>"test",
+    "order_id"=>"1",
+    "server_url"=> "http://contentplan"
+];
+ $data = json_encode($data);
+//eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0OTkiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JrQvtC90YLQtdC90YIt0L/Qu9Cw0L0gIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoidWsifQ==
+
+$data = base64_encode($data);
+//echo $data;
+
+$signString = '2DOaV0DIWfeDD1mcgBOIlUZS85tExifYlvj6Sva3'+$data+'2DOaV0DIWfeDD1mcgBOIlUZS85tExifYlvj6Sva3';
+// $publicKey = base64_encode("sandbox_i88667918126");
+// $privatKey = base64_encode("sandbox_qbx1UwYpdocY2SmAe8x53vsHck4zrrmOaD4uiaIq");
+// $signString = $privatKey.$data.$privatKey;
+// //echo $privatKey;
+// echo $signString;
+ $signature = base64_encode(sha1($signString));
+// //echo $signature;
+
+        ?>
                 <form method="POST" accept-charset="utf-8" target="blank" action="https://www.liqpay.ua/api/3/checkout">
-                    <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0OTkiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JrQvtC90YLQtdC90YIt0L/Qu9Cw0L0gIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoidWsifQ==" />
-                    <input type="hidden" name="signature" value="Fe/LLjnt/UobCWFMDS0q/1/565A=" />
+                    <input type="hidden" name="data" value="<?php echo $data?>" />
+                    <input type="hidden" name="signature" value="<?php echo $signature ?>" />
                     <button id="main-buy" style="border: none !important;
                     cursor: pointer;
                     margin-top: 70px;
@@ -592,6 +620,11 @@
                 <h3>
                     <a target="blank" href="confidentiality.html">
                         політика конфіденційності
+                    </a>
+                </h3>
+                <h3 style="margin-top: 0px;">
+                    <a target="blank" href="offer.html">
+                        Умови надання послуг
                     </a>
                 </h3>
             </div>

@@ -10,12 +10,14 @@ if(windowWidth <= 768){
 }
 //////////////////////slowlyNav//////////////
 $("nav").on("click","a", function (event) {
+  
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = ($(id).offset().top)-50;
     $('body,html').animate({scrollTop: top}, 1500);
 });
 $("a").on("click",function (event) {
+  if(event.target.tagName != "BUTTON") return;
   event.preventDefault();
   var id  = $(this).attr('href'),
       top = ($(id).offset().top)-500;
@@ -99,4 +101,3 @@ $('.info h3:first-child').on('click', function(){
         $('.info ul').css('height','0px');
     }
 })
-base
