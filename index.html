@@ -39,9 +39,11 @@
 <h2>
     Тільки сьогодні 499 грн.
 </h2>
-<button>
-    Купити
-</button>
+<a href="#main-buy">
+    <button>
+        Купити
+    </button>
+</a>
             </section>
         </div>
     </header>
@@ -281,9 +283,31 @@
                             </h3>
                             </div>            
                 </div>
-                <button>
-                    ЛИШЕ 499 грн. <br>СЬОГОДНІ
-                </button>
+        
+                <form method="POST" accept-charset="utf-8" target="blank" action="https://www.liqpay.ua/api/3/checkout">
+                    <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0OTkiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JrQvtC90YLQtdC90YIt0L/Qu9Cw0L0gIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoidWsifQ==" />
+                    <input type="hidden" name="signature" value="Fe/LLjnt/UobCWFMDS0q/1/565A=" />
+                    <button id="main-buy" style="border: none !important;
+                    cursor: pointer;
+                    margin-top: 70px;
+                    font-family: 'Montserrat', sans-serif;
+                    background: #B1E9FC;
+                    -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+                    box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+                    border-radius: 60px;
+                    font-weight: normal !important;
+                    font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
+                    padding: 10px 80px;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    margin-bottom: 100px;
+                      "onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
+                      <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
+                        style="margin-right: 7px !important; vertical-align: middle !important;"/>
+                      <span style="vertical-align:middle; !important">ЛИШЕ 499 грн.               </span>
+                    </button>
+                  </form>
+                
             </div>
         </section>
         <section class="smm-calendar">
@@ -331,9 +355,11 @@
         Отримайте миттєвий доступ просто зараз. Сьогодні лише за 499 гривень (зазвичай 2999 гривень).
 
     </h1>
-    <button>
+ <a href="#main-buy">
+    <button >
         отримати доступ
     </button>
+ </a>
 </div>
         </section>
         <section class="for-free">
@@ -385,7 +411,7 @@
                     
                 </div>
             </div>
-            <div class="wrapper margin" style="margin-top: 170px;">
+            <div class="wrapper margin" style="margin-top: 150px;">
                 <img src="images/collage-3.png" alt="">
                 <div class="text-content">
                     <h2>
@@ -426,10 +452,12 @@
             Візьміть <span style="color: #DAA520;">під контроль</span> свою кар’єру в галузі бойових мистецтв просто зараз.
 
         </h2>
+      <a href="#main-buy">
         <button>
             отримати усе 
 за 499грн. <br>сьогодні
         </button>
+      </a>
     </div>
 </div>
         </section>
@@ -448,9 +476,11 @@
                     Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
     
                 </h2>
+               <a href="#main-buy">
                 <button>
                     Придбати лише за<br> 499грн.
                 </button>
+               </a>
             </div>
         </div>
     </div>
@@ -458,15 +488,17 @@
         <div class="wrapper">
         <div class="container">
             <h1>
-                Для кого цей календар?
+                Скільки часу потрібно?
             </h1>
             <h2>
-                Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
+                Наші клієнти планують всі повідомлення протягом вихідних. Замість планування, ви можете потратити 5 хвилин в день, щоб зробити повідомлення. За дуже короткий час ви зможете створювати пости, які забезпечать вам РЕАЛЬНО високий рівень охоплення дописів, залучення потенційних клієнтів та продажі.
 
             </h2>
+           <a href="#main-buy">
             <button>
                 Придбати лише за<br> 499грн.
             </button>
+           </a>
         </div>
         </div>
     </div>
@@ -474,15 +506,18 @@
         <div class="wrapper">
         <div class="container">
             <h1>
-                Для кого цей календар?
+                Як швидко я можу очікувати результатів для свого бізнесу?
             </h1>
             <h2>
-                Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
+                Якщо ви СЬОГОДНІ почнете щоденно розміщувати публікації, ви можете очікувати більшого охоплення, реакції і активності через 3-4 тижні. Чудовою частиною цього є те, що результати в соціальних мережах ростуть в геометричній прогресії.
+
 
             </h2>
-            <button>
-                Придбати лише за<br> 499грн.
-            </button>
+            <a href="#main-buy">
+                <button>
+                    Придбати лише за<br> 499грн.
+                </button>
+            </a>
         </div>
         </div>
     </div>
@@ -490,15 +525,18 @@
         <div class="wrapper">
         <div class="container">
             <h1>
-                Для кого цей календар?
+                Як швидко я отримаю доступ до календаря?
+
             </h1>
             <h2>
-                Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
+                Ви отримаєте миттєвий доступ після купівлі. Після оформлення замовлення, ви отримаєте посилання на матеріали на свою електронну пошту. Зверніть увагу, що електронна скринька має бути робочою.
 
             </h2>
+           <a href="#main-buy">
             <button>
                 Придбати лише за<br> 499грн.
             </button>
+           </a>
         </div>
         </div>
     </div>
@@ -507,16 +545,18 @@
         <div class="container">
            
             <h1>
-                Для кого цей календар?
+                Що я отримаю, коли придбаю СММ календар для майстрів бойових мистецтв?
             </h1>
             <h2>
-                Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
+                Ви отримаєте файл Google Sheets з 365 ідеями для постів на наступні 12 місяців і 120 готових постів для соціальних мереж (фотографії). Всі пости розділені на категорії (рекламні, питання, цитати, особисті теми, відповіді на типові питання тощо). 
 
             </h2>
+           <a href="#main-buy">
             <button>
                 Придбати лише за<br> 499грн.
                
             </button>
+           </a>
         </div>
         </div>
     </div>
@@ -550,7 +590,9 @@
                     </li>
                 </ul>
                 <h3>
-                    політика конфіденційності
+                    <a target="blank" href="confidentiality.html">
+                        політика конфіденційності
+                    </a>
                 </h3>
             </div>
         </div>
