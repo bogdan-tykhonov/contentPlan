@@ -1,3 +1,15 @@
+<?php
+//unset($_POST);
+$test = 0;
+if(isset($_POST['data'])){
+$test += 1;
+$result =  $_POST['data'];
+$result = base64_decode($result);
+setcookie("liqpay_data", $result);
+header("Location: index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +25,13 @@
     <title>contentPlan</title>
 </head>
 <body>
+<div class="alert">
+        <div class="container">
+        <i class="fas fa-exclamation-circle"></i> Олату скасовано
+        </div>
+        </div>
     <header>
+       
         <div class="container">
             <nav>
                 <ul>
@@ -283,58 +301,29 @@
                             </h3>
                             </div>            
                 </div>
-               
-        <?php 
-        
-$data = [
-    "public_key" => "i57952521690",
-    "version" => "3",
-    "action"=> "pay",
-    "amount"=>"3",
-    "currency"=>"UAH",
-    "description"=>"test",
-    "order_id"=>"1",
-    "server_url"=> "http://contentplan"
-];
- $data = json_encode($data);
-//eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI0OTkiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JrQvtC90YLQtdC90YIt0L/Qu9Cw0L0gIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoidWsifQ==
-
-$data = base64_encode($data);
-//echo $data;
-
-$signString = '2DOaV0DIWfeDD1mcgBOIlUZS85tExifYlvj6Sva3'+$data+'2DOaV0DIWfeDD1mcgBOIlUZS85tExifYlvj6Sva3';
-// $publicKey = base64_encode("sandbox_i88667918126");
-// $privatKey = base64_encode("sandbox_qbx1UwYpdocY2SmAe8x53vsHck4zrrmOaD4uiaIq");
-// $signString = $privatKey.$data.$privatKey;
-// //echo $privatKey;
-// echo $signString;
- $signature = base64_encode(sha1($signString));
-// //echo $signature;
-
-        ?>
-                <form method="POST" accept-charset="utf-8" target="blank" action="https://www.liqpay.ua/api/3/checkout">
-                    <input type="hidden" name="data" value="<?php echo $data?>" />
-                    <input type="hidden" name="signature" value="<?php echo $signature ?>" />
-                    <button id="main-buy" style="border: none !important;
-                    cursor: pointer;
-                    margin-top: 70px;
-                    font-family: 'Montserrat', sans-serif;
-                    background: #B1E9FC;
-                    -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
-                    box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
-                    border-radius: 60px;
-                    font-weight: normal !important;
-                    font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
-                    padding: 10px 80px;
-                    -webkit-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
-                    margin-bottom: 100px;
-                      "onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
-                      <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
-                        style="margin-right: 7px !important; vertical-align: middle !important;"/>
-                      <span style="vertical-align:middle; !important">ЛИШЕ 499 грн.               </span>
-                    </button>
-                  </form>
+<form method="POST"  accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
+  <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIxIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoicnUiLCJzZXJ2ZXJfdXJsIjoiaHR0cDovL2NvbnRlbnRwbGFuLyIsInJlc3VsdF91cmwiOiJodHRwOi8vY29udGVudHBsYW4vIn0=" />
+  <input type="hidden" name="signature" value="ElE9mFQvAJjFCZ/UJtEM7HAXFiY=" />
+  <button id="main-buy" style="border: none !important;
+  cursor: pointer;
+  margin-top: 70px;
+  font-family: 'Montserrat', sans-serif;
+  background: #B1E9FC;
+  -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+  box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+  border-radius: 60px;
+  font-weight: normal !important;
+  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
+  padding: 10px 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 100px;
+    "onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
+    <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
+      style="margin-right: 7px !important; vertical-align: middle !important;"/>
+    <span style="vertical-align:middle; !important">ЛИШЕ 499 грн.                  </span>
+  </button>
+</form>
                 
             </div>
         </section>

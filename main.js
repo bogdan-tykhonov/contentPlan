@@ -101,3 +101,19 @@ $('.info h3:first-child').on('click', function(){
         $('.info ul').css('height','0px');
     }
 })
+function showAlert(){
+$('.alert').css('height','60px');
+}
+function closeAlert(){
+  $('.alert').css('height','0px');
+}
+//////////////////////////
+if(getCookie('liqpay_data')){
+let liqPay = JSON.parse(getCookie('liqpay_data'));
+let status = liqPay.status;
+if(status == 'failure'){
+  showAlert();
+  setTimeout(closeAlert, 3000);
+}
+deleteCookie('liqpay_data');
+}

@@ -1116,4 +1116,39 @@ footer .container .info ul li:hover {
 footer .container .info ul li:hover a {
   color: #68C3D3;
 }
+
+.alert {
+  height: 0px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red !important;
+  color: white;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.alert .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600 !important;
+  font-size: calc(20px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .alert .container {
+    font-size: 30px !important;
+  }
+}
+
+.alert .container i {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=stylesheet.css.map */
