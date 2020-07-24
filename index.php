@@ -1,6 +1,5 @@
 <?php
 //unset($_POST);
-$test = 0;
 if(isset($_POST['data'])){
 $test += 1;
 $result =  $_POST['data'];
@@ -23,18 +22,49 @@ header("Location: index.php");
     <link rel="stylesheet" href="fontawesome/all.min.css">
     <link rel="stylesheet" href="media.css">
     <title>contentPlan</title>
+
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '205984567465146');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=205984567465146&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
 </head>
-<body>
+<body id="top-scroll">
 <div class="alert">
         <div class="container">
         <i class="fas fa-exclamation-circle"></i> Олату скасовано
         </div>
         </div>
+<div class="modal-wrapper">
+    <div class="modal">
+        <h1>
+        Оплата пройшла успішно, належна інформація відправлена на почтову скриньку - <span style="color: #478C91;">bogdan.v.t@ukr.net</span>
+        </h1>
+        <button>
+        OK</button>
+    </div>
+</div>
     <header>
-       
         <div class="container">
             <nav>
                 <ul>
+                    
                     <li>
                         <a href="#buy">придбати</a>
 
@@ -43,7 +73,7 @@ header("Location: index.php");
                         <a href="#advantages">переваги</a>
                     </li>
                     <li>
-                        <a href="#questions">питання </a>                       
+                        <a href="#questions">питання </a>
                     </li>
                 </ul>
             </nav>
@@ -72,26 +102,26 @@ header("Location: index.php");
         що ви отримаєте?
     </h1>
     <div class="numbers">
-        
+
             <div class="number-section">
 <img src="images/01.png">
                 <h3>
-                    Розширення  аудиторії         
-                </h3>        
+                    Розширення  аудиторії
+                </h3>
             </div>
             <div class="number-section">
 <img src="images/02.png">
                 <h3>
-                    Більше охоплення                  
+                    Більше охоплення
                 </h3>
             </div>
-        
-        
+
+
             <div class="number-section" >
             <img src="images/03.png">
 
     <h3>
-        Частіші  реакції         
+        Частіші  реакції
     </h3>
             </div>
             <div class="number-section" >
@@ -100,7 +130,7 @@ header("Location: index.php");
                     Кращу  взаємодію
                 </h3>
             </div>
-        
+
     </div>
     <h2 class="section-header">
         Ваш контент на наступні 12 місяців вже готовий
@@ -142,17 +172,17 @@ header("Location: index.php");
                 <div class="answers-block" style="background-color: #414141;">
                    <div class="wrapper">
                     <h3>
-                        <span style="color: #95F8B6;">Успішний</span> блогер  знає, що... 
+                        <span style="color: #95F8B6;">Успішний</span> блогер  знає, що...
                     </h3>
                     <p>
-                        ... дописи варто публікувати щодня, аби розвиватися і залучати підписників. 
+                        ... дописи варто публікувати щодня, аби розвиватися і залучати підписників.
                     </p>
                     <p>
                         ... необхідно розміщувати цікавий контент, що спонукає до взаємодії та реакції.
                     </p>
                     <p>
                         ... важливо мати хороший план на цілий рік, аби публікувати щодня чудовий контент.
-                    
+
                     </p>
                     <p>
                         ... важливо зосередитися на своїй ніші з цікавими та свіжими ідеями.
@@ -169,11 +199,11 @@ header("Location: index.php");
                     </p>
                     <p>
                         ... контент, який вони публікують,  ні про що, і нікого не хвилює, відповідно, купа часу  та енергії потрачено даремно.
-                    
+
                     </p>
                     <p>
                         ... вони не мають контент плану, а  день починається з пошуку теми, підбору інформації та створення контенту. І так щодня…  це виснажує.
-                    
+
                     </p>
                     <p>
                         ... вони не зосереджені на темі і стилістиці, відповідно, мають низьке охоплення, слабкі реакції  та відсутність монетизації.
@@ -188,15 +218,15 @@ header("Location: index.php");
                 </h1>
 <section class="calendar-content-wrapper">
 <div class="calendar-top-wrappper">
-        
+
     <div class="calendar-content">
         <img src="images/calendar-2.png" alt="">
-        
+
             </div>
             <div class="calendar-content">
         <h2>
             365 ідей публікацій  у соціальних медіа, які заплановані для вас
-        
+
         </h2>
         <div class="wrapper">
             <div class="circle-before"></div>
@@ -225,8 +255,8 @@ header("Location: index.php");
             <h3 >
                 25 відповідей на типові питання, пов’язані з бойовими мистецтвами    </h3>
         </div>
-        
-        
+
+
             </div>
 </div>
     <div class="text-below-wrappper">
@@ -262,11 +292,11 @@ header("Location: index.php");
         <section  class="sale">
             <div class="container">
                 <h1 class="section-header">
-                    План вже готовий для вас: щоденні ідеї для публікацій, різні категорії контенту, дотримання порядку постів (мотивація, освіта, розваги) ... Тож ДОСИТЬ витрачати час!  
+                    План вже готовий для вас: щоденні ідеї для публікацій, різні категорії контенту, дотримання порядку постів (мотивація, освіта, розваги) ... Тож ДОСИТЬ витрачати час!
                    <span>
                     ХАПАЙТЕ  угоду дня ЗАРАЗ! Це лише 1,37 грн. на день – це багато, чи мало?
                    </span>
-                    
+
                 </h1>
                 <div class="clock" id="buy">
                     <div class="clock-circle">
@@ -293,39 +323,44 @@ header("Location: index.php");
                         </div>
                         <div class="clock-circle">
                             <h2 id="seconds">
-                               00 
+                               00
                             </h2>
                             <h3>
                                 секунд
 
                             </h3>
-                            </div>            
+                            </div>
                 </div>
-<form method="POST"  accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
-  <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIxIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoicnUiLCJzZXJ2ZXJfdXJsIjoiaHR0cDovL2NvbnRlbnRwbGFuLyIsInJlc3VsdF91cmwiOiJodHRwOi8vY29udGVudHBsYW4vIn0=" />
-  <input type="hidden" name="signature" value="ElE9mFQvAJjFCZ/UJtEM7HAXFiY=" />
-  <button id="main-buy" style="border: none !important;
-  cursor: pointer;
-  margin-top: 70px;
-  font-family: 'Montserrat', sans-serif;
-  background: #B1E9FC;
-  -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
-  box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
-  border-radius: 60px;
-  font-weight: normal !important;
-  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
-  padding: 10px 80px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  margin-bottom: 100px;
-    "onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
+                <div class="data">
+                    <h1>
+                        Заповніть анкету
+                    </h1>
+                    <h2>
+Ім'я
+                    </h2>
+                    <input id="name" type="text" placeholder="Іван">
+                    <h2>
+Телефон
+                    </h2>
+                    <input id="tel" type="tel" placeholder="+380">
+                    <h2>
+Почта
+                     </h2>
+                    <input id="mail" type="email" placeholder="example_user@mail.ua">
+                </div>
+                <form  method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
+  <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIxIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk1Nzk1MjUyMTY5MCIsImxhbmd1YWdlIjoicnUiLCJzZXJ2ZXJfdXJsIjoiaHR0cDovL21hLmtvbW9ycmEuY29tLnVhLyIsInJlc3VsdF91cmwiOiJodHRwOi8vbWEua29tb3JyYS5jb20udWEvIn0=" />
+  <input type="hidden" name="signature" value="nYnL9xMFT8Yg9GCA6mW7otPHkSY=" />
+  <button id='main-buy'>
     <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
       style="margin-right: 7px !important; vertical-align: middle !important;"/>
-    <span style="vertical-align:middle; !important">ЛИШЕ 499 грн.                  </span>
+    <span style="vertical-align:middle; !important">Купить 499 грн</span>
   </button>
 </form>
-                
-            </div>
+<div class="description">
+    <h3 id="attention">*Після успішної оплати СММ календар буде відправлений на вказану вище пошту, тому уважно перегляньте правильність набраних данних</h3>
+</div>
+</div>
         </section>
         <section class="smm-calendar">
 <div class="container">
@@ -393,7 +428,7 @@ header("Location: index.php");
             <h2>
                 50 постів-запитань, щоб покращити взаємодію з підписниками, вже готових до публікації
     (раніше – 1000 грн. з календарем безкоштовно)
-    
+
             </h2>
             <div class="circle-wrapper">
                 <div class="circle-before" style="background-color: #323C4C;"></div>
@@ -404,7 +439,7 @@ header("Location: index.php");
                     <div class="circle-before"  style="background-color: #323C4C;"></div>
                     <h3 >
                         Не витрачайте цінний час на тестування та здогадки. Ми вже дослідили понад 10 000+ питань! Ось переможці                </div>
-                
+
             </div>
         </div>
         <div class="wrapper">
@@ -415,7 +450,7 @@ header("Location: index.php");
             <div class="text-content">
                 <h2>
                     20 кумедних повідомлень для соціальних медіа в категорії  "Чому надаєш перевагу..?" для активізації відгуків підписників та поширень  (раніше – 400 грн., з календарем безкоштовно)
-    
+
                 </h2>
                 <div class="circle-wrapper">
                     <div class="circle-before"  style="background-color: #A0C5E0;"></div>
@@ -425,14 +460,14 @@ header("Location: index.php");
                         <div class="circle-before"  style="background-color: #A0C5E0;"></div>
                         <h3 >
                             Наша,  ретельно підібрана, категорія публікацій "Чому надаєш перевагу..?" заохочує підписників коментувати та ділитися дописом                    </div>
-                    
+
                 </div>
             </div>
             <div class="wrapper margin" style="margin-top: 150px;">
                 <img src="images/collage-3.png" alt="">
                 <div class="text-content">
                     <h2>
-                        50 красивих і мотивуючих цитат для збільшення охоплення та взаємодії з підписниками (раніше 1000 грн., з календарем безкоштовно)    
+                        50 красивих і мотивуючих цитат для збільшення охоплення та взаємодії з підписниками (раніше 1000 грн., з календарем безкоштовно)
                     </h2>
                     <div class="circle-wrapper">
                         <div class="circle-before"  style="background-color: #97998D;"></div>
@@ -471,7 +506,7 @@ header("Location: index.php");
         </h2>
       <a href="#main-buy">
         <button>
-            отримати усе 
+            отримати усе
 за 499грн. <br>сьогодні
         </button>
       </a>
@@ -491,7 +526,7 @@ header("Location: index.php");
                 </h1>
                 <h2>
                     Для тих, хто займається бойовими мистецтвами та спортивними одноборствами. Нашими клієнтами є, в основному, тренери, адміністратори спортивних клубів, інструктори і спортсмени. Це ідеально підходить для вас, якщо ви любите бойові мистецтва.
-    
+
                 </h2>
                <a href="#main-buy">
                 <button>
@@ -560,18 +595,18 @@ header("Location: index.php");
     <div class="slide" style="background-image: url(images/slide-5.png);">
         <div class="wrapper">
         <div class="container">
-           
+
             <h1>
                 Що я отримаю, коли придбаю СММ календар для майстрів бойових мистецтв?
             </h1>
             <h2>
-                Ви отримаєте файл Google Sheets з 365 ідеями для постів на наступні 12 місяців і 120 готових постів для соціальних мереж (фотографії). Всі пости розділені на категорії (рекламні, питання, цитати, особисті теми, відповіді на типові питання тощо). 
+                Ви отримаєте файл Google Sheets з 365 ідеями для постів на наступні 12 місяців і 120 готових постів для соціальних мереж (фотографії). Всі пости розділені на категорії (рекламні, питання, цитати, особисті теми, відповіді на типові питання тощо).
 
             </h2>
            <a href="#main-buy">
             <button>
                 Придбати лише за<br> 499грн.
-               
+
             </button>
            </a>
         </div>
@@ -585,7 +620,8 @@ header("Location: index.php");
             <h1>
                 designed by <span>hof</span><span  style="color: #A0C5E0;">tech</span>
             </h1>
-          
+                <img src="https://picua.org/images/2018/11/11/61921fd3b6ccd7d3fb4d67918133d44a.png" alt="PayServices" >
+
             <div class="info">
                 <h3>
                     контакти
@@ -618,6 +654,10 @@ header("Location: index.php");
                 </h3>
             </div>
         </div>
+       <a href="#top-scroll" class="top">
+        <div  class="scroll-top">
+            <i class="fas fa-angle-up"></i>
+        </div></a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="slick/slick.js"></script>

@@ -993,6 +993,9 @@ footer {
 }
 
 footer .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1001,6 +1004,13 @@ footer .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+}
+
+footer .container img {
+  width: 20%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 footer .container h1 {
@@ -1057,12 +1067,12 @@ footer .container .info h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal !important;
-  font-size: calc(12px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(10px + 6 * ((100vw - 375px) / (1280 - 375))) !important;
 }
 
 @media (min-width: 1440px) {
   footer .container .info h3 {
-    font-size: 22px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -1097,7 +1107,7 @@ footer .container .info ul li {
   transition: all 0.3s ease;
   text-transform: uppercase;
   font-weight: normal !important;
-  font-size: calc(10px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
+  font-size: calc(10px + 6 * ((100vw - 375px) / (1280 - 375))) !important;
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
@@ -1105,7 +1115,7 @@ footer .container .info ul li {
 
 @media (min-width: 1440px) {
   footer .container .info ul li {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -1115,6 +1125,199 @@ footer .container .info ul li:hover {
 
 footer .container .info ul li:hover a {
   color: #68C3D3;
+}
+
+.data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data h1 {
+  font-weight: 600 !important;
+  font-size: calc(25px + 20 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .data h1 {
+    font-size: 45px !important;
+  }
+}
+
+.data h2 {
+  font-weight: 600 !important;
+  font-size: calc(20px + 15 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .data h2 {
+    font-size: 35px !important;
+  }
+}
+
+.data input {
+  font-weight: 400 !important;
+  font-size: calc(15px + 5 * ((100vw - 375px) / (1280 - 375))) !important;
+  padding-left: 20px;
+  width: 30%;
+  height: 40px;
+}
+
+@media (min-width: 1440px) {
+  .data input {
+    font-size: 20px !important;
+  }
+}
+
+.data input ::-webkit-input-placeholder {
+  font-weight: 400 !important;
+  font-size: calc(15px + 5 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+.data input :-ms-input-placeholder {
+  font-weight: 400 !important;
+  font-size: calc(15px + 5 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+.data input ::-ms-input-placeholder {
+  font-weight: 400 !important;
+  font-size: calc(15px + 5 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+.data input ::placeholder {
+  font-weight: 400 !important;
+  font-size: calc(15px + 5 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .data input ::-webkit-input-placeholder {
+    font-size: 20px !important;
+  }
+  .data input :-ms-input-placeholder {
+    font-size: 20px !important;
+  }
+  .data input ::-ms-input-placeholder {
+    font-size: 20px !important;
+  }
+  .data input ::placeholder {
+    font-size: 20px !important;
+  }
+}
+
+#main-buy {
+  border: none !important;
+  cursor: pointer;
+  margin-top: 70px;
+  background: #B1E9FC;
+  -webkit-box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+  box-shadow: 16px 16px 32px #B7D5E0, -16px -16px 32px #FFFFFF;
+  border-radius: 60px;
+  font-weight: normal !important;
+  font-size: calc(20px + 16 * ((100vw - 375px) / (1280 - 375))) !important;
+  padding: 10px 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1440px) {
+  #main-buy {
+    font-size: 36px !important;
+  }
+}
+
+#main-buy:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.description {
+  width: 100%;
+}
+
+.description h3 {
+  font-weight: 400 !important;
+  font-size: calc(15px + 10 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .description h3 {
+    font-size: 25px !important;
+  }
+}
+
+.modal-wrapper {
+  display: none;
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-wrapper .modal {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  padding: 20px 40px;
+  z-index: 12;
+  color: black;
+  background-color: white;
+  width: 40%;
+  height: 20vw;
+}
+
+.modal-wrapper .modal h1 {
+  font-weight: 600 !important;
+  font-size: calc(15px + 15 * ((100vw - 375px) / (1280 - 375))) !important;
+}
+
+@media (min-width: 1440px) {
+  .modal-wrapper .modal h1 {
+    font-size: 30px !important;
+  }
+}
+
+.modal-wrapper .modal button {
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  font-weight: 400 !important;
+  font-size: calc(14px + 14 * ((100vw - 375px) / (1280 - 375))) !important;
+  background: transparent;
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 5px 50px;
+}
+
+@media (min-width: 1440px) {
+  .modal-wrapper .modal button {
+    font-size: 28px !important;
+  }
 }
 
 .alert {
@@ -1150,5 +1353,29 @@ footer .container .info ul li:hover a {
 
 .alert .container i {
   margin-right: 20px;
+}
+
+.scroll-top {
+  font-size: 50px;
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #68C3D3;
+  background-color: white;
+  border: 6px solid black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 /*# sourceMappingURL=stylesheet.css.map */

@@ -13,6 +13,11 @@
 }
 
 @media (max-width: 992px) {
+  .modal {
+    width: 50% !important;
+    height: 25vw !important;
+    padding: 10px 20px !important;
+  }
   .slide .container {
     height: 100% !important;
     -ms-flex-pack: distribute !important;
@@ -159,7 +164,30 @@
   }
 }
 
+@media (max-width: 650px) {
+  .modal {
+    width: 50% !important;
+    height: 30vw !important;
+    padding: 10px 20px !important;
+  }
+  .modal button {
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+}
+
 @media (max-width: 576px) {
+  .modal {
+    width: 65% !important;
+    height: 40vw !important;
+    padding: 10px 20px !important;
+  }
+  #main-buy {
+    padding: 10px 50px;
+  }
+  .data input {
+    width: 50%;
+  }
   footer .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

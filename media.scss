@@ -11,6 +11,11 @@
     }
 }
 @media(max-width:992px){
+    .modal{
+        width: 50%!important;
+        height: 25vw!important;
+        padding: 10px 20px!important;
+    }
     .slide{
         .container{
             height: 100%!important;
@@ -145,7 +150,32 @@ margin-top: 0;
     margin-top: 50px!important;
 }
 }
+@media(max-width:650px){
+    .modal{
+        width: 50%!important;
+        height: 30vw!important;
+        padding: 10px 20px !important;
+        button{
+            bottom: 10px!important;
+            right: 10px!important;
+        }
+    }
+}
 @media(max-width:576px){
+    .modal{
+        width: 65%!important;
+        height: 40vw!important;
+        padding: 10px 20px !important;
+
+    }
+    #main-buy{
+        padding: 10px 50px;
+    }
+    .data{
+        input{
+            width: 50%;
+        }
+    }
     footer{
         .container{
             flex-direction: column-reverse;
